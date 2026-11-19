@@ -1,0 +1,83 @@
+:root {
+  --fondo: #f4f3f8;
+  --tinta: #1c1a2e;
+  --suave: #6a6785;
+  --marca: #5b2fd1;
+  --marca-osc: #3c1d9a;
+  --acento: #e8398a;
+  --linea: #dedbeb;
+  --ok: #16a05c;
+  --mal: #d6384b;
+  --aviso: #c98a00;
+  --tarjeta: #ffffff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--fondo); color: var(--tinta); }
+.cabecera { background: linear-gradient(100deg, #1c1a2e, #3c1d9a); color: #fff; padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.marca { display: flex; gap: 12px; align-items: center; cursor: pointer; }
+.marca small { display: block; opacity: .7; font-size: 12px; }
+.logo { background: var(--acento); border-radius: 10px; width: 40px; height: 40px; display: grid; place-items: center; font-weight: 800; }
+.pasos { display: flex; gap: 6px; font-size: 13px; }
+.pasos span { padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.12); opacity: .7; }
+.pasos span.activo { background: var(--acento); opacity: 1; font-weight: 600; }
+.contenedor { max-width: 1120px; margin: 24px auto; padding: 0 20px; }
+.pie { text-align: center; color: var(--suave); font-size: 12px; padding: 24px; }
+h1 { font-size: 26px; margin: 0 0 4px; }
+h2 { font-size: 18px; margin: 0 0 12px; }
+.sub { color: var(--suave); margin: 0 0 20px; }
+.aviso { max-width: 1120px; margin: 16px auto 0; padding: 12px 16px; border-radius: 10px; background: #fdecee; color: var(--mal); border: 1px solid #f3b9c0; }
+.aviso.ok { background: #e6f6ee; color: var(--ok); border-color: #a8dfc2; }
+
+.rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; }
+.tarjeta { background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 14px; padding: 20px; box-shadow: 0 2px 10px rgba(40,20,90,.05); }
+.evento { display: flex; flex-direction: column; gap: 8px; }
+.etiqueta { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; background: #ece6fb; color: var(--marca-osc); width: fit-content; }
+.etiqueta.AGOTADO, .etiqueta.CANCELADO { background: #fdecee; color: var(--mal); }
+.meta { color: var(--suave); font-size: 14px; }
+button { font: inherit; cursor: pointer; border: 0; border-radius: 10px; padding: 10px 16px; background: var(--marca); color: #fff; font-weight: 600; }
+button:hover { background: var(--marca-osc); }
+button:disabled { background: #bdb8d4; cursor: not-allowed; }
+button.sec { background: #ece6fb; color: var(--marca-osc); }
+button.sec:hover { background: #ddd3f7; }
+button.ok { background: var(--ok); }
+button.mal { background: var(--mal); }
+
+.dos { display: grid; grid-template-columns: 1fr 360px; gap: 20px; align-items: start; }
+@media (max-width: 900px) { .dos { grid-template-columns: 1fr; } }
+.escenario { background: linear-gradient(#2a2545, #1c1a2e); color: #fff; text-align: center; border-radius: 8px 8px 40px 40px; padding: 10px; letter-spacing: 6px; font-size: 12px; margin-bottom: 18px; }
+.zona { margin-bottom: 16px; }
+.zona h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--suave); margin: 0 0 8px; }
+.fila { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; align-items: center; }
+.asiento { width: 52px; padding: 7px 0; font-size: 11px; border-radius: 8px; background: #ece6fb; color: var(--marca-osc); border: 2px solid transparent; }
+.asiento:hover { background: #ddd3f7; }
+.asiento.sel { background: var(--marca); color: #fff; border-color: var(--acento); }
+.asiento.BLOQUEADO { background: #fff1cf; color: var(--aviso); cursor: not-allowed; }
+.asiento.VENDIDO { background: #e5e3ec; color: #9a97b0; cursor: not-allowed; text-decoration: line-through; }
+.leyenda { display: flex; gap: 16px; font-size: 12px; color: var(--suave); margin-top: 10px; flex-wrap: wrap; }
+.leyenda i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+
+.resumen table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.resumen td { padding: 5px 0; }
+.resumen td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.resumen tr.total td { border-top: 2px solid var(--linea); font-weight: 700; font-size: 17px; padding-top: 10px; }
+.resumen .desc td { color: var(--ok); }
+label { display: block; font-size: 13px; color: var(--suave); margin: 10px 0 3px; }
+input[type=text], input[type=email], input[type=tel] { width: 100%; padding: 9px 11px; border: 1px solid var(--linea); border-radius: 8px; font: inherit; }
+input:focus { outline: 2px solid var(--marca); border-color: transparent; }
+.cuenta { font-size: 34px; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--marca); }
+.cuenta.poco { color: var(--mal); }
+.opciones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0; }
+.opcion { border: 2px solid var(--linea); border-radius: 12px; padding: 14px; text-align: center; cursor: pointer; background: #fff; }
+.opcion.sel { border-color: var(--marca); background: #f5f1ff; }
+.opcion strong { display: block; font-size: 16px; }
+.opcion small { color: var(--suave); }
+.simulador { border: 2px dashed var(--acento); border-radius: 14px; padding: 18px; background: #fff7fb; }
+.simulador .acciones { display: flex; gap: 10px; margin-top: 12px; }
+.codigo { font-family: Consolas, monospace; letter-spacing: 2px; font-weight: 700; font-size: 18px; }
+.firma { font-family: Consolas, monospace; font-size: 11px; color: var(--suave); word-break: break-all; }
+.boleto { display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center; border-left: 6px solid var(--acento); }
+.boleto img { width: 150px; height: 150px; border: 1px solid var(--linea); border-radius: 8px; }
+.verif { margin-top: 8px; font-size: 13px; font-weight: 600; }
+.verif.ok { color: var(--ok); }
+.verif.mal { color: var(--mal); }
+.cabecera-vista { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }

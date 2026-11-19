@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StagePass Live</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca" id="ir-inicio" role="button" tabindex="0">
+      <span class="logo">SP</span>
+      <div><strong>StagePass Live</strong><small>Boletería digital · Arquitectura Hexagonal</small></div>
+    </div>
+    <nav class="pasos" id="pasos" aria-label="Progreso">
+      <span data-paso="1">1 · Eventos</span>
+      <span data-paso="2">2 · Asientos</span>
+      <span data-paso="3">3 · Pago</span>
+      <span data-paso="4">4 · Boletos</span>
+    </nav>
+  </header>
+
+  <div id="aviso" class="aviso" hidden></div>
+  <main id="vista" class="contenedor"></main>
+
+  <footer class="pie">Taller 13 · Arquitectura de Software · UNAB · Luisa Fernanda Velandia Salamanca</footer>
+  <script src="app.js"></script>
+</body>
+</html>
