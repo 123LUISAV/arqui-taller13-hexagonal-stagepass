@@ -1,0 +1,77 @@
+---
+title: Casos de uso y puertos de entrada
+---
+classDiagram
+  direction TB
+  class ConsultarEventos {
+    <<interface>>
+    +listar() VistaEvento[]
+    +obtener(eventoId) VistaEvento
+    +asientos(eventoId) Asiento[]
+  }
+  class CotizarCompra {
+    <<interface>>
+    +ejecutar(solicitud) Liquidacion
+  }
+  class IniciarCompra {
+    <<interface>>
+    +ejecutar(solicitud) Orden
+  }
+  class IniciarPago {
+    <<interface>>
+    +ejecutar(solicitud) RegistroPago
+  }
+  class ConfirmarPago {
+    <<interface>>
+    +ejecutar(solicitud) Orden / null
+  }
+  class ExpirarReservas {
+    <<interface>>
+    +ejecutar() number
+  }
+  class ConsultarOrden {
+    <<interface>>
+    +ejecutar(ordenId) DetalleOrden
+  }
+  class VerificarBoleto {
+    <<interface>>
+    +ejecutar(codigo) ResultadoVerificacion
+  }
+  class ConsultarEventosService {
+    +listar()
+    +obtener(eventoId)
+    +asientos(eventoId)
+  }
+  class CotizarCompraService {
+    +ejecutar(solicitud)
+  }
+  class IniciarCompraService {
+    +ejecutar(solicitud)
+  }
+  class IniciarPagoService {
+    +ejecutar(solicitud)
+  }
+  class ConfirmarPagoService {
+    +ejecutar(solicitud)
+    -rechazarorden
+    -aprobarorden
+    -pagoValidoorden, aviso, verif
+    -efectosSecundariosorden, ...
+  }
+  class ExpirarReservasService {
+    +ejecutar()
+  }
+  class ConsultarOrdenService {
+    +ejecutar(ordenId)
+  }
+  class VerificarBoletoService {
+    +ejecutar(codigo)
+  }
+  ConsultarEventosService ..|> ConsultarEventos
+  CotizarCompraService ..|> CotizarCompra
+  IniciarCompraService ..|> IniciarCompra
+  IniciarPagoService ..|> IniciarPago
+  ConfirmarPagoService ..|> ConfirmarPago
+  ExpirarReservasService ..|> ExpirarReservas
+  ConsultarOrdenService ..|> ConsultarOrden
+  VerificarBoletoService ..|> VerificarBoleto

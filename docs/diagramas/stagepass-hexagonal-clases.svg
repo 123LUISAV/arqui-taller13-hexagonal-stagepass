@@ -1,0 +1,723 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3706" height="1634" viewBox="0 0 3706 1634" font-family="Segoe UI, Arial, sans-serif">
+<defs>
+<marker id="tri" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L13,6 L1,11 z" fill="#fff" stroke="#333"/></marker>
+<marker id="abi" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#555" stroke-width="1.4"/></marker>
+<marker id="dia" markerWidth="16" markerHeight="12" refX="1" refY="6" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1,6 L8,1 L15,6 L8,11 z" fill="#333" stroke="#333"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="20" y="20" width="2618" height="210" rx="10" fill="#f8cecc" fill-opacity=".45" stroke="#b85450" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="36" y="43" font-size="16" font-weight="700" fill="#222">«package» Adaptadores primarios (infrastructure/adapters/in)</text>
+<rect x="20" y="280" width="2618" height="166" rx="10" fill="#dae8fc" fill-opacity=".45" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="36" y="303" font-size="16" font-weight="700" fill="#222">«package» Puertos de entrada (application/ports/in)</text>
+<rect x="20" y="496" width="2618" height="194" rx="10" fill="#d5e8d4" fill-opacity=".45" stroke="#82b366" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="36" y="519" font-size="16" font-weight="700" fill="#222">«package» Casos de uso (application/usecases)</text>
+<rect x="20" y="740" width="2618" height="304" rx="10" fill="#e1d5e7" fill-opacity=".45" stroke="#9673a6" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="36" y="763" font-size="16" font-weight="700" fill="#222">«package» Puertos de salida (application/ports/out)</text>
+<rect x="20" y="1094" width="2618" height="430" rx="10" fill="#ffe6cc" fill-opacity=".45" stroke="#d79b00" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="36" y="1117" font-size="16" font-weight="700" fill="#222">«package» Adaptadores secundarios (infrastructure/adapters/out)</text>
+<rect x="2698" y="20" width="988" height="1200" rx="10" fill="#fff2cc" fill-opacity=".45" stroke="#d6b656" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="2714" y="43" font-size="16" font-weight="700" fill="#222">«package» Dominio (núcleo)</text>
+<line x1="188.0" y1="548.0" x2="188.0" y2="428.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="514.0" y1="548.0" x2="514.0" y2="400.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="840.0" y1="548.0" x2="840.0" y2="400.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1166.0" y1="548.0" x2="1166.0" y2="400.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1492.0" y1="548.0" x2="1492.0" y2="400.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1818.0" y1="548.0" x2="1818.0" y2="400.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="2144.0" y1="548.0" x2="2144.0" y2="400.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="2470.0" y1="548.0" x2="2470.0" y2="400.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="188.0" y1="212.0" x2="188.0" y2="332.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="289.9" y1="212.0" x2="464.5" y2="332.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="338.0" y1="193.5" x2="741.0" y2="332.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="338.0" y1="176.4" x2="1017.6" y2="332.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="338.0" y1="159.2" x2="1994.0" y2="348.8" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="338.0" y1="156.7" x2="2320.0" y2="351.3" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="664.0" y1="151.8" x2="1360.6" y2="332.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="990.0" y1="152.7" x2="1686.0" y2="332.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="338.0" y1="128.7" x2="364.0" y2="126.3" stroke-width="1.2" stroke="#333" marker-start="url(#dia)" marker-end="url(#abi)" opacity="0.9"/>
+<line x1="252.1" y1="644.0" x2="449.9" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="188.0" y1="644.0" x2="188.0" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="312.7" y1="644.0" x2="697.1" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="514.0" y1="616.0" x2="514.0" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="555.8" y1="616.0" x2="772.3" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="570.3" y1="616.0" x2="1109.7" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="797.0" y1="616.0" x2="574.7" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="840.0" y1="616.0" x2="840.0" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="880.8" y1="616.0" x2="1091.7" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="972.5" y1="616.0" x2="1668.0" y2="794.5" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="868.1" y1="616.0" x2="1137.9" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="896.3" y1="616.0" x2="1435.7" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1166.0" y1="616.0" x2="1166.0" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1316.0" y1="610.9" x2="2320.0" y2="804.1" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1166.0" y1="616.0" x2="1166.0" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1642.0" y1="644.2" x2="2320.0" y2="798.8" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1409.2" y1="672.0" x2="1248.8" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1492.0" y1="672.0" x2="1492.0" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1342.0" y1="664.5" x2="990.0" y2="792.5" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1342.0" y1="645.3" x2="664.0" y2="804.7" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1342.0" y1="652.9" x2="331.3" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1342.0" y1="667.4" x2="623.8" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1381.6" y1="672.0" x2="900.6" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1436.8" y1="672.0" x2="1196.3" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1492.0" y1="672.0" x2="1492.0" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1546.2" y1="672.0" x2="1782.2" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1736.5" y1="616.0" x2="1314.6" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1692.5" y1="616.0" x2="990.0" y2="806.4" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1668.0" y1="611.7" x2="664.0" y2="810.3" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1761.7" y1="616.0" x2="1222.3" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1818.0" y1="616.0" x2="1818.0" y2="942.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="2021.8" y1="616.0" x2="1316.0" y2="812.3" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="2058.1" y1="616.0" x2="1613.3" y2="792.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="2341.1" y1="616.0" x2="1642.0" y2="800.4" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="2320.0" y1="613.3" x2="1316.0" y2="822.7" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="2320.0" y1="601.8" x2="664.0" y2="820.2" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="2320.0" y1="608.4" x2="338.0" y2="956.6" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="990.0" y1="597.7" x2="3042.0" y2="812.3" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="990.0" y1="596.2" x2="3368.0" y2="821.8" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="990.0" y1="610.0" x2="2716.0" y2="932.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="664.0" y1="595.8" x2="3042.0" y2="814.2" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1166.0" y1="1146.0" x2="1166.0" y2="916.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1492.0" y1="1146.0" x2="1492.0" y2="888.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1818.0" y1="1146.0" x2="1818.0" y2="874.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="188.0" y1="1146.0" x2="188.0" y2="874.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="514.0" y1="1146.0" x2="514.0" y2="888.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="840.0" y1="1146.0" x2="840.0" y2="902.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="188.0" y1="1270.0" x2="188.0" y2="1024.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="664.0" y1="1288.4" x2="1994.0" y2="892.6" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1883.7" y1="1270.0" x2="2415.0" y2="874.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1994.0" y1="1281.8" x2="664.0" y2="1014.2" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="216.5" y1="1422.0" x2="485.5" y2="1026.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="542.1" y1="1422.0" x2="817.3" y2="1010.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="863.1" y1="1422.0" x2="1142.9" y2="1010.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1189.1" y1="1422.0" x2="1468.9" y2="1010.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1519.8" y1="1422.0" x2="1790.2" y2="1024.0" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="690.0" y1="1325.4" x2="664.0" y2="1326.6" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1016.0" y1="1322.2" x2="664.0" y2="1329.8" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="1342.0" y1="1321.1" x2="664.0" y2="1330.9" stroke-width="1.2" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)" opacity="0.9"/>
+<line x1="3042.0" y1="555.3" x2="2933.3" y2="628.0" stroke-width="1.2" stroke="#333" marker-start="url(#dia)" marker-end="url(#abi)" opacity="0.9"/>
+<line x1="3192.0" y1="602.0" x2="3192.0" y2="628.0" stroke-width="1.2" stroke="#333" marker-start="url(#dia)" marker-end="url(#abi)" opacity="0.9"/>
+<line x1="3042.0" y1="414.5" x2="3016.0" y2="407.5" stroke-width="1.2" stroke="#333" marker-end="url(#abi)" opacity="0.9"/>
+<line x1="3247.5" y1="254.0" x2="3475.3" y2="628.0" stroke-width="1.2" stroke="#333" marker-end="url(#abi)" opacity="0.9"/>
+<line x1="3148.4" y1="254.0" x2="2889.5" y2="794.0" stroke-width="1.2" stroke="#333" marker-end="url(#abi)" opacity="0.9"/>
+<line x1="3342.0" y1="695.8" x2="3368.0" y2="696.2" stroke-width="1.2" stroke="#333" marker-end="url(#abi)" opacity="0.9"/>
+<line x1="3016.0" y1="164.8" x2="3368.0" y2="136.2" stroke-width="1.2" stroke="#333" marker-end="url(#abi)" opacity="0.9"/>
+<line x1="3368.0" y1="422.6" x2="3342.0" y2="427.4" stroke-width="1.2" stroke="#333" marker-end="url(#abi)" opacity="0.9"/>
+<line x1="3192.0" y1="794.0" x2="3192.0" y2="760.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="2950.1" y1="282.0" x2="3459.5" y2="918.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="3281.4" y1="602.0" x2="3473.6" y2="918.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1316.0" y1="824.5" x2="3042.0" y2="484.5" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="990.0" y1="803.4" x2="3042.0" y2="206.6" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="664.0" y1="797.7" x2="2716.0" y2="219.3" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="338.0" y1="801.1" x2="3368.0" y2="155.9" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1642.0" y1="807.1" x2="3368.0" y2="427.9" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="1910.2" y1="792.0" x2="2733.3" y2="426.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="2277.9" y1="904.0" x2="2741.7" y2="1098.0" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="2294.0" y1="890.2" x2="3042.0" y2="1100.8" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="990.0" y1="985.4" x2="3368.0" y2="1133.6" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<line x1="338.0" y1="956.5" x2="3368.0" y2="421.5" stroke-width="1.2" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)" opacity="0.55"/>
+<g><rect x="2716" y="72" width="300" height="210" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="2716" y="72" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="2866" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Evento</text>
+<text x="2724" y="126" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ id: string</text>
+<text x="2724" y="140" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ nombre: string</text>
+<text x="2724" y="154" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ tipo: TipoEvento</text>
+<text x="2724" y="168" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ recintoId: string</text>
+<text x="2724" y="182" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ fechaHora: Date</text>
+<text x="2724" y="196" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ estado: EstadoEvento</text>
+<text x="2724" y="210" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ claveSecreta: string</text>
+<line x1="2716" y1="218" x2="3016" y2="218" stroke="#d6b656"/>
+<text x="2724" y="232" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ exigirVentaAbierta(ahora): void</text>
+<text x="2724" y="246" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ marcarAgotado(): void</text>
+<text x="2724" y="260" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ reabrirVenta(): void</text>
+<text x="2724" y="274" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ cancelar(): void</text>
+</g>
+<g><rect x="3042" y="72" width="300" height="182" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3042" y="72" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3192" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Asiento</text>
+<text x="3050" y="126" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ id: string</text>
+<text x="3050" y="140" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ recintoId: string</text>
+<text x="3050" y="154" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ codigo: CodigoUbicacion</text>
+<text x="3050" y="168" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ precioBase: Dinero</text>
+<text x="3050" y="182" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ estado: EstadoAsiento</text>
+<line x1="3042" y1="190" x2="3342" y2="190" stroke="#d6b656"/>
+<text x="3050" y="204" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ estaDisponible(): boolean</text>
+<text x="3050" y="218" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ bloquear(): void</text>
+<text x="3050" y="232" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ vender(): void</text>
+<text x="3050" y="246" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ liberar(): void</text>
+</g>
+<g><rect x="3368" y="72" width="300" height="104" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3368" y="72" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3518" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Recinto</text>
+<text x="3376" y="126" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ id: string</text>
+<text x="3376" y="140" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ nombre: string</text>
+<text x="3376" y="154" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ciudad: string</text>
+<text x="3376" y="168" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ aforo: number</text>
+<line x1="3368" y1="176" x2="3668" y2="176" stroke="#d6b656"/>
+</g>
+<g><rect x="2716" y="308" width="300" height="118" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="2716" y="308" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="2866" y="334" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Cliente</text>
+<text x="2724" y="362" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ id: string</text>
+<text x="2724" y="376" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ nombreCompleto: string</text>
+<text x="2724" y="390" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ correo: string</text>
+<text x="2724" y="404" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ telefonoMovil: string</text>
+<text x="2724" y="418" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ nacionalidad: string</text>
+<line x1="2716" y1="426" x2="3016" y2="426" stroke="#d6b656"/>
+</g>
+<g><rect x="3042" y="308" width="300" height="294" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3042" y="308" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3192" y="334" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Orden</text>
+<text x="3050" y="362" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ id: string</text>
+<text x="3050" y="376" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ cliente: Cliente</text>
+<text x="3050" y="390" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ eventoId: string</text>
+<text x="3050" y="404" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ asientos: ItemOrden[]</text>
+<text x="3050" y="418" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ liquidacion: Liquidacion</text>
+<text x="3050" y="432" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ creadaEn: Date</text>
+<text x="3050" y="446" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ expiraEn: Date</text>
+<text x="3050" y="460" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ estado: EstadoOrden</text>
+<text x="3050" y="474" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ pasarela?: NombrePasarela</text>
+<text x="3050" y="488" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ referenciaPago?: string</text>
+<line x1="3042" y1="496" x2="3342" y2="496" stroke="#d6b656"/>
+<text x="3050" y="510" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ crear(datos): Orden</text>
+<text x="3050" y="524" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ asignarPago(pasarela, ref): void</text>
+<text x="3050" y="538" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ aprobar(): void</text>
+<text x="3050" y="552" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ rechazar(): void</text>
+<text x="3050" y="566" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ expirar(): void</text>
+<text x="3050" y="580" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ haExpirado(ahora): boolean</text>
+<text x="3050" y="594" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ datosInmutables(asientoId): string</text>
+</g>
+<g><rect x="3368" y="308" width="300" height="174" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3368" y="308" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3518" y="334" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Boleto</text>
+<text x="3376" y="362" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ id: string</text>
+<text x="3376" y="376" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ordenId: string</text>
+<text x="3376" y="390" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ eventoId: string</text>
+<text x="3376" y="404" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ asientoId: string</text>
+<text x="3376" y="418" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ codigoUbicacion: string</text>
+<text x="3376" y="432" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ codigoRedencion: string</text>
+<text x="3376" y="446" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ firmaHash: string</text>
+<text x="3376" y="460" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ fechaEmision: Date</text>
+<text x="3376" y="474" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ representacionGrafica: string</text>
+<line x1="3368" y1="482" x2="3668" y2="482" stroke="#d6b656"/>
+</g>
+<g><rect x="2716" y="628" width="300" height="90" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="2716" y="628" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="2866" y="643" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«value object»</text>
+<text x="2866" y="660" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ItemOrden</text>
+<text x="2724" y="682" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ asientoId: string</text>
+<text x="2724" y="696" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ codigoUbicacion: string</text>
+<text x="2724" y="710" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ precioBase: Dinero</text>
+<line x1="2716" y1="718" x2="3016" y2="718" stroke="#d6b656"/>
+</g>
+<g><rect x="3042" y="628" width="300" height="132" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3042" y="628" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3192" y="643" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«value object»</text>
+<text x="3192" y="660" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Liquidacion</text>
+<text x="3050" y="682" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ valorBase: Dinero</text>
+<text x="3050" y="696" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ tarifaServicio: Dinero</text>
+<text x="3050" y="710" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ descuento: Dinero</text>
+<text x="3050" y="724" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ montoTotal: Dinero</text>
+<text x="3050" y="738" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ porcentajeTarifa: number</text>
+<text x="3050" y="752" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ porcentajeDescuento: number</text>
+<line x1="3042" y1="760" x2="3342" y2="760" stroke="#d6b656"/>
+</g>
+<g><rect x="3368" y="628" width="300" height="140" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3368" y="628" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3518" y="643" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«value object»</text>
+<text x="3518" y="660" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Dinero</text>
+<text x="3376" y="682" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ monto: number</text>
+<line x1="3368" y1="690" x2="3668" y2="690" stroke="#d6b656"/>
+<text x="3376" y="704" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ cop(monto): Dinero</text>
+<text x="3376" y="718" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ sumar(otro): Dinero</text>
+<text x="3376" y="732" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ restar(otro): Dinero</text>
+<text x="3376" y="746" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ porcentaje(pct): Dinero</text>
+<text x="3376" y="760" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ igual(otro): boolean</text>
+</g>
+<g><rect x="2716" y="794" width="300" height="98" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="2716" y="794" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="2866" y="809" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«value object»</text>
+<text x="2866" y="826" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >CodigoUbicacion</text>
+<text x="2724" y="848" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ valor: string</text>
+<line x1="2716" y1="856" x2="3016" y2="856" stroke="#d6b656"/>
+<text x="2724" y="870" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ de(valor): CodigoUbicacion</text>
+<text x="2724" y="884" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ zona: string</text>
+</g>
+<g><rect x="3042" y="794" width="300" height="68" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3042" y="794" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3192" y="820" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >CalculadoraTarifas</text>
+<line x1="3042" y1="840" x2="3342" y2="840" stroke="#d6b656"/>
+<text x="3050" y="854" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ calcular(valorBase, cantidad): Liquidacion</text>
+</g>
+<g><rect x="3368" y="794" width="300" height="84" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3368" y="794" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3518" y="820" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >PoliticaBloqueo</text>
+<text x="3376" y="848" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ minutos: number = 10</text>
+<line x1="3368" y1="856" x2="3668" y2="856" stroke="#d6b656"/>
+<text x="3376" y="870" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ calcularExpiracion(ahora): Date</text>
+</g>
+<g><rect x="2716" y="918" width="300" height="84" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="2716" y="918" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="2866" y="944" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >LimiteBoletasPorEvento</text>
+<text x="2724" y="972" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ MAXIMO = 6</text>
+<line x1="2716" y1="980" x2="3016" y2="980" stroke="#d6b656"/>
+<text x="2724" y="994" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ verificar(acumuladas, nuevas): void</text>
+</g>
+<g><rect x="3042" y="918" width="300" height="154" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3042" y="918" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3192" y="944" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ErrorNegocio</text>
+<text x="3050" y="972" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ codigo: string</text>
+<line x1="3042" y1="980" x2="3342" y2="980" stroke="#d6b656"/>
+<text x="3050" y="994" font-size="10.5" font-family="Consolas, monospace" fill="#222">Subclases: DatosInvalidos,</text>
+<text x="3050" y="1008" font-size="10.5" font-family="Consolas, monospace" fill="#222">EventoNoEncontrado, EventoNoDisponible,</text>
+<text x="3050" y="1022" font-size="10.5" font-family="Consolas, monospace" fill="#222">AsientoNoDisponible, CantidadInvalida,</text>
+<text x="3050" y="1036" font-size="10.5" font-family="Consolas, monospace" fill="#222">LimiteBoletasExcedido, TransicionInvalida,</text>
+<text x="3050" y="1050" font-size="10.5" font-family="Consolas, monospace" fill="#222">OrdenNoEncontrada, PasarelaNoSoportada,</text>
+<text x="3050" y="1064" font-size="10.5" font-family="Consolas, monospace" fill="#222">PagoNoVerificado</text>
+</g>
+<g><rect x="3368" y="918" width="300" height="146" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3368" y="918" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3518" y="933" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«enumeration»</text>
+<text x="3518" y="950" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Estados</text>
+<text x="3376" y="972" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ TipoEvento: CONCIERTO | TEATRO | FESTIVAL</text>
+<text x="3376" y="986" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ EstadoEvento: PROGRAMADO | AGOTADO | CANCELADO</text>
+<text x="3376" y="1000" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ EstadoAsiento: DISPONIBLE | BLOQUEADO | VENDIDO</text>
+<text x="3376" y="1014" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ EstadoOrden: PENDIENTE_PAGO | APROBADA |</text>
+<text x="3376" y="1028" font-size="10.5" font-family="Consolas, monospace" fill="#222">+   RECHAZADA | EXPIRADA</text>
+<text x="3376" y="1042" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ NombrePasarela: paypal | wompi | pse</text>
+<text x="3376" y="1056" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ResultadoPago: APROBADO | RECHAZADO | PENDIENTE</text>
+<line x1="3368" y1="1064" x2="3668" y2="1064" stroke="#d6b656"/>
+</g>
+<g><rect x="2716" y="1098" width="300" height="104" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="2716" y="1098" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="2866" y="1113" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«value object»</text>
+<text x="2866" y="1130" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >NotificacionPago</text>
+<text x="2724" y="1152" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ pasarela: NombrePasarela</text>
+<text x="2724" y="1166" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ referencia: string</text>
+<text x="2724" y="1180" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ resultado: ResultadoPago</text>
+<text x="2724" y="1194" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ montoPagado: Dinero</text>
+<line x1="2716" y1="1202" x2="3016" y2="1202" stroke="#d6b656"/>
+</g>
+<g><rect x="3042" y="1098" width="300" height="90" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3042" y="1098" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3192" y="1113" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«value object»</text>
+<text x="3192" y="1130" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >RegistroPago</text>
+<text x="3050" y="1152" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ pasarela: NombrePasarela</text>
+<text x="3050" y="1166" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ referencia: string</text>
+<text x="3050" y="1180" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ urlPago: string</text>
+<line x1="3042" y1="1188" x2="3342" y2="1188" stroke="#d6b656"/>
+</g>
+<g><rect x="3368" y="1098" width="300" height="90" fill="#fff" stroke="#d6b656" stroke-width="1.6"/>
+<rect x="3368" y="1098" width="300" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1.6"/>
+<text x="3518" y="1113" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«value object»</text>
+<text x="3518" y="1130" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ComprobanteFiscal</text>
+<text x="3376" y="1152" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ numero: string</text>
+<text x="3376" y="1166" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ cufe: string</text>
+<text x="3376" y="1180" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ emitidoEn: Date</text>
+<line x1="3368" y1="1188" x2="3668" y2="1188" stroke="#d6b656"/>
+</g>
+<g><rect x="38" y="332" width="300" height="96" fill="#fff" stroke="#6c8ebf" stroke-width="1.6"/>
+<rect x="38" y="332" width="300" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.6"/>
+<text x="188" y="347" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="188" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ConsultarEventos</text>
+<line x1="38" y1="378" x2="338" y2="378" stroke="#6c8ebf"/>
+<text x="46" y="392" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ listar(): VistaEvento[]</text>
+<text x="46" y="406" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ obtener(eventoId): VistaEvento</text>
+<text x="46" y="420" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ asientos(eventoId): Asiento[]</text>
+</g>
+<g><rect x="364" y="332" width="300" height="68" fill="#fff" stroke="#6c8ebf" stroke-width="1.6"/>
+<rect x="364" y="332" width="300" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.6"/>
+<text x="514" y="347" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="514" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >CotizarCompra</text>
+<line x1="364" y1="378" x2="664" y2="378" stroke="#6c8ebf"/>
+<text x="372" y="392" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(solicitud): Liquidacion</text>
+</g>
+<g><rect x="690" y="332" width="300" height="68" fill="#fff" stroke="#6c8ebf" stroke-width="1.6"/>
+<rect x="690" y="332" width="300" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.6"/>
+<text x="840" y="347" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="840" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >IniciarCompra</text>
+<line x1="690" y1="378" x2="990" y2="378" stroke="#6c8ebf"/>
+<text x="698" y="392" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(solicitud): Orden</text>
+</g>
+<g><rect x="1016" y="332" width="300" height="68" fill="#fff" stroke="#6c8ebf" stroke-width="1.6"/>
+<rect x="1016" y="332" width="300" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.6"/>
+<text x="1166" y="347" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="1166" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >IniciarPago</text>
+<line x1="1016" y1="378" x2="1316" y2="378" stroke="#6c8ebf"/>
+<text x="1024" y="392" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(solicitud): RegistroPago</text>
+</g>
+<g><rect x="1342" y="332" width="300" height="68" fill="#fff" stroke="#6c8ebf" stroke-width="1.6"/>
+<rect x="1342" y="332" width="300" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.6"/>
+<text x="1492" y="347" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="1492" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ConfirmarPago</text>
+<line x1="1342" y1="378" x2="1642" y2="378" stroke="#6c8ebf"/>
+<text x="1350" y="392" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(solicitud): Orden | null</text>
+</g>
+<g><rect x="1668" y="332" width="300" height="68" fill="#fff" stroke="#6c8ebf" stroke-width="1.6"/>
+<rect x="1668" y="332" width="300" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.6"/>
+<text x="1818" y="347" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="1818" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ExpirarReservas</text>
+<line x1="1668" y1="378" x2="1968" y2="378" stroke="#6c8ebf"/>
+<text x="1676" y="392" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(): number</text>
+</g>
+<g><rect x="1994" y="332" width="300" height="68" fill="#fff" stroke="#6c8ebf" stroke-width="1.6"/>
+<rect x="1994" y="332" width="300" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.6"/>
+<text x="2144" y="347" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="2144" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ConsultarOrden</text>
+<line x1="1994" y1="378" x2="2294" y2="378" stroke="#6c8ebf"/>
+<text x="2002" y="392" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(ordenId): DetalleOrden</text>
+</g>
+<g><rect x="2320" y="332" width="300" height="68" fill="#fff" stroke="#6c8ebf" stroke-width="1.6"/>
+<rect x="2320" y="332" width="300" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.6"/>
+<text x="2470" y="347" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="2470" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >VerificarBoleto</text>
+<line x1="2320" y1="378" x2="2620" y2="378" stroke="#6c8ebf"/>
+<text x="2328" y="392" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(codigo): ResultadoVerificacion</text>
+</g>
+<g><rect x="38" y="548" width="300" height="96" fill="#fff" stroke="#82b366" stroke-width="1.6"/>
+<rect x="38" y="548" width="300" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1.6"/>
+<text x="188" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ConsultarEventosService</text>
+<line x1="38" y1="594" x2="338" y2="594" stroke="#82b366"/>
+<text x="46" y="608" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ listar()</text>
+<text x="46" y="622" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ obtener(eventoId)</text>
+<text x="46" y="636" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ asientos(eventoId)</text>
+</g>
+<g><rect x="364" y="548" width="300" height="68" fill="#fff" stroke="#82b366" stroke-width="1.6"/>
+<rect x="364" y="548" width="300" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1.6"/>
+<text x="514" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >CotizarCompraService</text>
+<line x1="364" y1="594" x2="664" y2="594" stroke="#82b366"/>
+<text x="372" y="608" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(solicitud)</text>
+</g>
+<g><rect x="690" y="548" width="300" height="68" fill="#fff" stroke="#82b366" stroke-width="1.6"/>
+<rect x="690" y="548" width="300" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1.6"/>
+<text x="840" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >IniciarCompraService</text>
+<line x1="690" y1="594" x2="990" y2="594" stroke="#82b366"/>
+<text x="698" y="608" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(solicitud)</text>
+</g>
+<g><rect x="1016" y="548" width="300" height="68" fill="#fff" stroke="#82b366" stroke-width="1.6"/>
+<rect x="1016" y="548" width="300" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1.6"/>
+<text x="1166" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >IniciarPagoService</text>
+<line x1="1016" y1="594" x2="1316" y2="594" stroke="#82b366"/>
+<text x="1024" y="608" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(solicitud)</text>
+</g>
+<g><rect x="1342" y="548" width="300" height="124" fill="#fff" stroke="#82b366" stroke-width="1.6"/>
+<rect x="1342" y="548" width="300" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1.6"/>
+<text x="1492" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ConfirmarPagoService</text>
+<line x1="1342" y1="594" x2="1642" y2="594" stroke="#82b366"/>
+<text x="1350" y="608" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(solicitud)</text>
+<text x="1350" y="622" font-size="10.5" font-family="Consolas, monospace" fill="#222">-rechazar(orden)</text>
+<text x="1350" y="636" font-size="10.5" font-family="Consolas, monospace" fill="#222">-aprobar(orden)</text>
+<text x="1350" y="650" font-size="10.5" font-family="Consolas, monospace" fill="#222">-pagoValido(orden, aviso, verif)</text>
+<text x="1350" y="664" font-size="10.5" font-family="Consolas, monospace" fill="#222">-efectosSecundarios(orden, ...)</text>
+</g>
+<g><rect x="1668" y="548" width="300" height="68" fill="#fff" stroke="#82b366" stroke-width="1.6"/>
+<rect x="1668" y="548" width="300" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1.6"/>
+<text x="1818" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ExpirarReservasService</text>
+<line x1="1668" y1="594" x2="1968" y2="594" stroke="#82b366"/>
+<text x="1676" y="608" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar()</text>
+</g>
+<g><rect x="1994" y="548" width="300" height="68" fill="#fff" stroke="#82b366" stroke-width="1.6"/>
+<rect x="1994" y="548" width="300" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1.6"/>
+<text x="2144" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ConsultarOrdenService</text>
+<line x1="1994" y1="594" x2="2294" y2="594" stroke="#82b366"/>
+<text x="2002" y="608" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(ordenId)</text>
+</g>
+<g><rect x="2320" y="548" width="300" height="68" fill="#fff" stroke="#82b366" stroke-width="1.6"/>
+<rect x="2320" y="548" width="300" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1.6"/>
+<text x="2470" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >VerificarBoletoService</text>
+<line x1="2320" y1="594" x2="2620" y2="594" stroke="#82b366"/>
+<text x="2328" y="608" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar(codigo)</text>
+</g>
+<g><rect x="38" y="792" width="300" height="82" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="38" y="792" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="188" y="807" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="188" y="824" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >RecintoRepository</text>
+<line x1="38" y1="838" x2="338" y2="838" stroke="#9673a6"/>
+<text x="46" y="852" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ listar(): Recinto[]</text>
+<text x="46" y="866" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPorId(id): Recinto | null</text>
+</g>
+<g><rect x="364" y="792" width="300" height="96" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="364" y="792" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="514" y="807" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="514" y="824" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >EventoRepository</text>
+<line x1="364" y1="838" x2="664" y2="838" stroke="#9673a6"/>
+<text x="372" y="852" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ listar(): Evento[]</text>
+<text x="372" y="866" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPorId(id): Evento | null</text>
+<text x="372" y="880" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ guardar(evento): void</text>
+</g>
+<g><rect x="690" y="792" width="300" height="110" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="690" y="792" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="840" y="807" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="840" y="824" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >AsientoRepository</text>
+<line x1="690" y1="838" x2="990" y2="838" stroke="#9673a6"/>
+<text x="698" y="852" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPorRecinto(id): Asiento[]</text>
+<text x="698" y="866" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPorIds(ids): Asiento[]</text>
+<text x="698" y="880" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ cambiarEstadoSiEs(ids, desde, hacia): boolean</text>
+<text x="698" y="894" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ contarPorEstado(recintoId): Record</text>
+</g>
+<g><rect x="1016" y="792" width="300" height="124" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="1016" y="792" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="1166" y="807" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="1166" y="824" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >OrdenRepository</text>
+<line x1="1016" y1="838" x2="1316" y2="838" stroke="#9673a6"/>
+<text x="1024" y="852" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ guardar(orden): void</text>
+<text x="1024" y="866" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPorId(id): Orden | null</text>
+<text x="1024" y="880" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPorReferenciaPago(p, ref): Orden | null</text>
+<text x="1024" y="894" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPendientesVencidas(ahora): Orden[]</text>
+<text x="1024" y="908" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ contarAsientosActivos(cli, evt): number</text>
+</g>
+<g><rect x="1342" y="792" width="300" height="96" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="1342" y="792" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="1492" y="807" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="1492" y="824" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >BoletoRepository</text>
+<line x1="1342" y1="838" x2="1642" y2="838" stroke="#9673a6"/>
+<text x="1350" y="852" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ guardarTodos(boletos): void</text>
+<text x="1350" y="866" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPorOrden(ordenId): Boleto[]</text>
+<text x="1350" y="880" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPorCodigo(codigo): Boleto | null</text>
+</g>
+<g><rect x="1668" y="792" width="300" height="82" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="1668" y="792" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="1818" y="807" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="1818" y="824" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ClienteRepository</text>
+<line x1="1668" y1="838" x2="1968" y2="838" stroke="#9673a6"/>
+<text x="1676" y="852" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ buscarPorCorreo(correo): Cliente | null</text>
+<text x="1676" y="866" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ guardar(cliente): void</text>
+</g>
+<g><rect x="1994" y="792" width="300" height="112" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="1994" y="792" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="2144" y="807" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="2144" y="824" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >PasarelaPagoPort</text>
+<text x="2002" y="846" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ nombre: NombrePasarela</text>
+<line x1="1994" y1="854" x2="2294" y2="854" stroke="#9673a6"/>
+<text x="2002" y="868" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ registrarPago(orden): RegistroPago</text>
+<text x="2002" y="882" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ interpretarNotificacion(cuerpo): NotificacionPago</text>
+<text x="2002" y="896" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ verificarTransaccion(ref): NotificacionPago</text>
+</g>
+<g><rect x="2320" y="792" width="300" height="82" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="2320" y="792" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="2470" y="807" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="2470" y="824" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ResolutorPasarelas</text>
+<line x1="2320" y1="838" x2="2620" y2="838" stroke="#9673a6"/>
+<text x="2328" y="852" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ obtener(nombre): PasarelaPagoPort</text>
+<text x="2328" y="866" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ disponibles(): NombrePasarela[]</text>
+</g>
+<g><rect x="38" y="942" width="300" height="82" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="38" y="942" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="188" y="957" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="188" y="974" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >GeneradorBoletoPort</text>
+<line x1="38" y1="988" x2="338" y2="988" stroke="#9673a6"/>
+<text x="46" y="1002" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ generar(solicitud): MaterialBoleto</text>
+<text x="46" y="1016" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ verificarFirma(boleto, orden, evento): boolean</text>
+</g>
+<g><rect x="364" y="942" width="300" height="84" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="364" y="942" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="514" y="957" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="514" y="974" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >NotificacionPort</text>
+<text x="372" y="996" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ canal: CanalNotificacion</text>
+<line x1="364" y1="1004" x2="664" y2="1004" stroke="#9673a6"/>
+<text x="372" y="1018" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ enviar(mensaje): void</text>
+</g>
+<g><rect x="690" y="942" width="300" height="68" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="690" y="942" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="840" y="957" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="840" y="974" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >FacturacionElectronicaPort</text>
+<line x1="690" y1="988" x2="990" y2="988" stroke="#9673a6"/>
+<text x="698" y="1002" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ emitir(orden): ComprobanteFiscal</text>
+</g>
+<g><rect x="1016" y="942" width="300" height="68" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="1016" y="942" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="1166" y="957" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="1166" y="974" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Clock</text>
+<line x1="1016" y1="988" x2="1316" y2="988" stroke="#9673a6"/>
+<text x="1024" y="1002" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ahora(): Date</text>
+</g>
+<g><rect x="1342" y="942" width="300" height="68" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="1342" y="942" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="1492" y="957" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="1492" y="974" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >GeneradorIds</text>
+<line x1="1342" y1="988" x2="1642" y2="988" stroke="#9673a6"/>
+<text x="1350" y="1002" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ nuevo(prefijo): string</text>
+</g>
+<g><rect x="1668" y="942" width="300" height="82" fill="#fff" stroke="#9673a6" stroke-width="1.6"/>
+<rect x="1668" y="942" width="300" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.6"/>
+<text x="1818" y="957" text-anchor="middle" font-size="10.5" font-style="italic" fill="#333">«interface»</text>
+<text x="1818" y="974" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >Logger</text>
+<line x1="1668" y1="988" x2="1968" y2="988" stroke="#9673a6"/>
+<text x="1676" y="1002" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ info(mensaje): void</text>
+<text x="1676" y="1016" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ warn(mensaje): void</text>
+</g>
+<g><rect x="38" y="72" width="300" height="140" fill="#fff" stroke="#b85450" stroke-width="1.6"/>
+<rect x="38" y="72" width="300" height="40" fill="#f8cecc" stroke="#b85450" stroke-width="1.6"/>
+<text x="188" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ServidorWeb</text>
+<text x="46" y="126" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ app: Express</text>
+<line x1="38" y1="134" x2="338" y2="134" stroke="#b85450"/>
+<text x="46" y="148" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ crearAppWeb(dependencias)</text>
+<text x="46" y="162" font-size="10.5" font-family="Consolas, monospace" fill="#222">GET /api/eventos, /api/eventos/:id/asientos</text>
+<text x="46" y="176" font-size="10.5" font-family="Consolas, monospace" fill="#222">POST /api/cotizaciones, /api/compras</text>
+<text x="46" y="190" font-size="10.5" font-family="Consolas, monospace" fill="#222">POST /api/ordenes/:id/pago</text>
+<text x="46" y="204" font-size="10.5" font-family="Consolas, monospace" fill="#222">GET /api/ordenes/:id, /api/boletos/:c/verificar</text>
+</g>
+<g><rect x="364" y="72" width="300" height="82" fill="#fff" stroke="#b85450" stroke-width="1.6"/>
+<rect x="364" y="72" width="300" height="40" fill="#f8cecc" stroke="#b85450" stroke-width="1.6"/>
+<text x="514" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >WebhookPagos</text>
+<line x1="364" y1="118" x2="664" y2="118" stroke="#b85450"/>
+<text x="372" y="132" font-size="10.5" font-family="Consolas, monospace" fill="#222">POST /webhooks/pagos/:pasarela</text>
+<text x="372" y="146" font-size="10.5" font-family="Consolas, monospace" fill="#222">(recibe notificaciones asíncronas)</text>
+</g>
+<g><rect x="690" y="72" width="300" height="84" fill="#fff" stroke="#b85450" stroke-width="1.6"/>
+<rect x="690" y="72" width="300" height="40" fill="#f8cecc" stroke="#b85450" stroke-width="1.6"/>
+<text x="840" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >SchedulerExpiracion</text>
+<text x="698" y="126" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ intervalo: setInterval</text>
+<line x1="690" y1="134" x2="990" y2="134" stroke="#b85450"/>
+<text x="698" y="148" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ejecutar ExpirarReservas cada N s</text>
+</g>
+<g><rect x="1016" y="1146" width="300" height="98" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1016" y="1146" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="1166" y="1172" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >OrdenRepositoryMongo</text>
+<text x="1024" y="1200" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ col: Collection&lt;OrdenDoc&gt;</text>
+<line x1="1016" y1="1208" x2="1316" y2="1208" stroke="#d79b00"/>
+<text x="1024" y="1222" font-size="10.5" font-family="Consolas, monospace" fill="#222">(implementa OrdenRepository)</text>
+<text x="1024" y="1236" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ aDoc() / aDominio()</text>
+</g>
+<g><rect x="1342" y="1146" width="300" height="98" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1342" y="1146" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="1492" y="1172" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >BoletoRepositoryMongo</text>
+<text x="1350" y="1200" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ col: Collection&lt;BoletoDoc&gt;</text>
+<line x1="1342" y1="1208" x2="1642" y2="1208" stroke="#d79b00"/>
+<text x="1350" y="1222" font-size="10.5" font-family="Consolas, monospace" fill="#222">(implementa BoletoRepository)</text>
+<text x="1350" y="1236" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ índice único codigoRedencion</text>
+</g>
+<g><rect x="1668" y="1146" width="300" height="84" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1668" y="1146" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="1818" y="1172" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ClienteRepositoryMongo</text>
+<text x="1676" y="1200" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ col: Collection&lt;ClienteDoc&gt;</text>
+<line x1="1668" y1="1208" x2="1968" y2="1208" stroke="#d79b00"/>
+<text x="1676" y="1222" font-size="10.5" font-family="Consolas, monospace" fill="#222">(implementa ClienteRepository)</text>
+</g>
+<g><rect x="38" y="1146" width="300" height="84" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="38" y="1146" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="188" y="1172" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >RecintoRepositoryMysql</text>
+<text x="46" y="1200" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ pool: Pool (mysql2)</text>
+<line x1="38" y1="1208" x2="338" y2="1208" stroke="#d79b00"/>
+<text x="46" y="1222" font-size="10.5" font-family="Consolas, monospace" fill="#222">(implementa RecintoRepository)</text>
+</g>
+<g><rect x="364" y="1146" width="300" height="84" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="364" y="1146" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="514" y="1172" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >EventoRepositoryMysql</text>
+<text x="372" y="1200" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ pool: Pool (mysql2)</text>
+<line x1="364" y1="1208" x2="664" y2="1208" stroke="#d79b00"/>
+<text x="372" y="1222" font-size="10.5" font-family="Consolas, monospace" fill="#222">(implementa EventoRepository)</text>
+</g>
+<g><rect x="690" y="1146" width="300" height="98" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="690" y="1146" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="840" y="1172" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >AsientoRepositoryMysql</text>
+<text x="698" y="1200" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ pool: Pool (mysql2)</text>
+<line x1="690" y1="1208" x2="990" y2="1208" stroke="#d79b00"/>
+<text x="698" y="1222" font-size="10.5" font-family="Consolas, monospace" fill="#222">(implementa AsientoRepository)</text>
+<text x="698" y="1236" font-size="10.5" font-family="Consolas, monospace" fill="#222">UPDATE condicional transaccional</text>
+</g>
+<g><rect x="1994" y="1146" width="300" height="96" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1994" y="1146" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="2144" y="1172" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ReposMemoria</text>
+<line x1="1994" y1="1192" x2="2294" y2="1192" stroke="#d79b00"/>
+<text x="2002" y="1206" font-size="10.5" font-family="Consolas, monospace" fill="#222">Recinto/Evento/AsientoRepositoryMemoria</text>
+<text x="2002" y="1220" font-size="10.5" font-family="Consolas, monospace" fill="#222">Orden/Boleto/ClienteRepositoryMemoria</text>
+<text x="2002" y="1234" font-size="10.5" font-family="Consolas, monospace" fill="#222">(sustituto legacy y fakes de prueba)</text>
+</g>
+<g><rect x="38" y="1270" width="300" height="126" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="38" y="1270" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="188" y="1296" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >GeneradorBoletoCriptografico</text>
+<text x="46" y="1324" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ALFABETO: string</text>
+<line x1="38" y1="1332" x2="338" y2="1332" stroke="#d79b00"/>
+<text x="46" y="1346" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ generar(solicitud): MaterialBoleto</text>
+<text x="46" y="1360" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ verificarFirma(boleto, orden, evento)</text>
+<text x="46" y="1374" font-size="10.5" font-family="Consolas, monospace" fill="#222">-firmar(clave, datos): HMAC-SHA256</text>
+<text x="46" y="1388" font-size="10.5" font-family="Consolas, monospace" fill="#222">-nuevoCodigo(): string (CSPRNG)</text>
+</g>
+<g><rect x="364" y="1270" width="300" height="126" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="364" y="1270" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="514" y="1296" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >PasarelaMockBase</text>
+<text x="372" y="1324" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ transacciones: Map</text>
+<line x1="364" y1="1332" x2="664" y2="1332" stroke="#d79b00"/>
+<text x="372" y="1346" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ registrarPago(orden)</text>
+<text x="372" y="1360" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ interpretarNotificacion(cuerpo)</text>
+<text x="372" y="1374" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ verificarTransaccion(ref)</text>
+<text x="372" y="1388" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ simularNotificacion(ref, resultado)</text>
+</g>
+<g><rect x="690" y="1270" width="300" height="98" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="690" y="1270" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="840" y="1296" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >PasarelaPayPalMock</text>
+<text x="698" y="1324" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ DTO PayPalWebhook</text>
+<line x1="690" y1="1332" x2="990" y2="1332" stroke="#d79b00"/>
+<text x="698" y="1346" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ traducirCuerpo(cuerpo)</text>
+<text x="698" y="1360" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ construirCuerpo(ref, monto, r)</text>
+</g>
+<g><rect x="1016" y="1270" width="300" height="98" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1016" y="1270" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="1166" y="1296" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >PasarelaWompiMock</text>
+<text x="1024" y="1324" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ DTO WompiWebhook</text>
+<line x1="1016" y1="1332" x2="1316" y2="1332" stroke="#d79b00"/>
+<text x="1024" y="1346" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ traducirCuerpo(cuerpo)</text>
+<text x="1024" y="1360" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ construirCuerpo(ref, monto, r)</text>
+</g>
+<g><rect x="1342" y="1270" width="300" height="98" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1342" y="1270" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="1492" y="1296" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >PasarelaPseMock</text>
+<text x="1350" y="1324" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ DTO PseWebhook</text>
+<line x1="1342" y1="1332" x2="1642" y2="1332" stroke="#d79b00"/>
+<text x="1350" y="1346" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ traducirCuerpo(cuerpo)</text>
+<text x="1350" y="1360" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ construirCuerpo(ref, monto, r)</text>
+</g>
+<g><rect x="1668" y="1270" width="300" height="98" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1668" y="1270" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="1818" y="1296" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >ResolutorPasarelasEnMapa</text>
+<text x="1676" y="1324" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ mapa: Map</text>
+<line x1="1668" y1="1332" x2="1968" y2="1332" stroke="#d79b00"/>
+<text x="1676" y="1346" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ obtener(nombre)</text>
+<text x="1676" y="1360" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ disponibles()</text>
+</g>
+<g><rect x="1994" y="1270" width="300" height="84" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1994" y="1270" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="2144" y="1296" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >WhatsAppMock</text>
+<text x="2002" y="1324" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ enviados: Mensaje[]</text>
+<line x1="1994" y1="1332" x2="2294" y2="1332" stroke="#d79b00"/>
+<text x="2002" y="1346" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ enviar(mensaje)</text>
+</g>
+<g><rect x="38" y="1422" width="300" height="84" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="38" y="1422" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="188" y="1448" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >SendGridMock</text>
+<text x="46" y="1476" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ enviados: Mensaje[]</text>
+<line x1="38" y1="1484" x2="338" y2="1484" stroke="#d79b00"/>
+<text x="46" y="1498" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ enviar(mensaje)</text>
+</g>
+<g><rect x="364" y="1422" width="300" height="84" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="364" y="1422" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="514" y="1448" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >FacturacionDianMock</text>
+<text x="372" y="1476" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ consecutivo: number</text>
+<line x1="364" y1="1484" x2="664" y2="1484" stroke="#d79b00"/>
+<text x="372" y="1498" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ emitir(orden): ComprobanteFiscal</text>
+</g>
+<g><rect x="690" y="1422" width="300" height="68" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="690" y="1422" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="840" y="1448" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >RelojSistema</text>
+<line x1="690" y1="1468" x2="990" y2="1468" stroke="#d79b00"/>
+<text x="698" y="1482" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ ahora(): Date</text>
+</g>
+<g><rect x="1016" y="1422" width="300" height="68" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1016" y="1422" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="1166" y="1448" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >GeneradorIdsUuid</text>
+<line x1="1016" y1="1468" x2="1316" y2="1468" stroke="#d79b00"/>
+<text x="1024" y="1482" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ nuevo(prefijo): string</text>
+</g>
+<g><rect x="1342" y="1422" width="300" height="82" fill="#fff" stroke="#d79b00" stroke-width="1.6"/>
+<rect x="1342" y="1422" width="300" height="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="1.6"/>
+<text x="1492" y="1448" text-anchor="middle" font-size="13" font-weight="700" fill="#111" >LoggerConsola</text>
+<line x1="1342" y1="1468" x2="1642" y2="1468" stroke="#d79b00"/>
+<text x="1350" y="1482" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ info(mensaje)</text>
+<text x="1350" y="1496" font-size="10.5" font-family="Consolas, monospace" fill="#222">+ warn(mensaje)</text>
+</g>
+<g font-size="12" fill="#222"><rect x="30" y="1544" width="560" height="62" fill="#fff" stroke="#bbb"/>
+<text x="40" y="1564" font-weight="700">Leyenda</text>
+<line x1="110" y1="1560" x2="160" y2="1560" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)"/><text x="168" y="1564">realiza / extiende</text>
+<line x1="310" y1="1560" x2="360" y2="1560" stroke="#8a8a8a" stroke-dasharray="4 4" marker-end="url(#abi)"/><text x="368" y="1564">depende de / usa</text>
+<line x1="110" y1="1586" x2="160" y2="1586" stroke="#333" marker-end="url(#abi)"/><text x="168" y="1590">asociación</text>
+<line x1="310" y1="1586" x2="360" y2="1586" stroke="#333" marker-start="url(#dia)" marker-end="url(#abi)"/><text x="368" y="1590">composición</text></g>
+</svg>

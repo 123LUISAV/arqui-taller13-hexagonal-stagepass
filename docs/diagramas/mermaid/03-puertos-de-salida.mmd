@@ -1,0 +1,100 @@
+---
+title: Puertos de salida y tipos del dominio
+---
+classDiagram
+  direction TB
+  class RecintoRepository {
+    <<interface>>
+    +listar() Recinto[]
+    +buscarPorId(id) Recinto / null
+  }
+  class EventoRepository {
+    <<interface>>
+    +listar() Evento[]
+    +buscarPorId(id) Evento / null
+    +guardar(evento) void
+  }
+  class AsientoRepository {
+    <<interface>>
+    +buscarPorRecinto(id) Asiento[]
+    +buscarPorIds(ids) Asiento[]
+    +cambiarEstadoSiEs(ids, desde, hacia) boolean
+    +contarPorEstado(recintoId) Record
+  }
+  class OrdenRepository {
+    <<interface>>
+    +guardar(orden) void
+    +buscarPorId(id) Orden / null
+    +buscarPorReferenciaPago(p, ref) Orden / null
+    +buscarPendientesVencidas(ahora) Orden[]
+    +contarAsientosActivos(cli, evt) number
+  }
+  class BoletoRepository {
+    <<interface>>
+    +guardarTodos(boletos) void
+    +buscarPorOrden(ordenId) Boleto[]
+    +buscarPorCodigo(codigo) Boleto / null
+  }
+  class ClienteRepository {
+    <<interface>>
+    +buscarPorCorreo(correo) Cliente / null
+    +guardar(cliente) void
+  }
+  class PasarelaPagoPort {
+    <<interface>>
+    +nombre NombrePasarela
+    +registrarPago(orden) RegistroPago
+    +interpretarNotificacion(cuerpo) NotificacionPago
+    +verificarTransaccion(ref) NotificacionPago
+  }
+  class ResolutorPasarelas {
+    <<interface>>
+    +obtener(nombre) PasarelaPagoPort
+    +disponibles() NombrePasarela[]
+  }
+  class GeneradorBoletoPort {
+    <<interface>>
+    +generar(solicitud) MaterialBoleto
+    +verificarFirma(boleto, orden, evento) boolean
+  }
+  class NotificacionPort {
+    <<interface>>
+    +canal CanalNotificacion
+    +enviar(mensaje) void
+  }
+  class FacturacionElectronicaPort {
+    <<interface>>
+    +emitir(orden) ComprobanteFiscal
+  }
+  class Clock {
+    <<interface>>
+    +ahora() Date
+  }
+  class GeneradorIds {
+    <<interface>>
+    +nuevo(prefijo) string
+  }
+  class Logger {
+    <<interface>>
+    +info(mensaje) void
+    +warn(mensaje) void
+  }
+  OrdenRepository ..> Orden
+  AsientoRepository ..> Asiento
+  EventoRepository ..> Evento
+  RecintoRepository ..> Recinto
+  BoletoRepository ..> Boleto
+  ClienteRepository ..> Cliente
+  PasarelaPagoPort ..> NotificacionPago
+  PasarelaPagoPort ..> RegistroPago
+  FacturacionElectronicaPort ..> ComprobanteFiscal
+  GeneradorBoletoPort ..> Boleto
+  class Orden
+  class Asiento
+  class Evento
+  class Recinto
+  class Boleto
+  class Cliente
+  class NotificacionPago
+  class RegistroPago
+  class ComprobanteFiscal

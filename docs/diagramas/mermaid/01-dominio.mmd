@@ -1,0 +1,162 @@
+---
+title: Dominio (núcleo)
+---
+classDiagram
+  direction TB
+  class Evento {
+    +id string
+    +nombre string
+    +tipo TipoEvento
+    +recintoId string
+    +fechaHora Date
+    +estado EstadoEvento
+    +claveSecreta string
+    +exigirVentaAbierta(ahora) void
+    +marcarAgotado() void
+    +reabrirVenta() void
+    +cancelar() void
+  }
+  class Asiento {
+    +id string
+    +recintoId string
+    +codigo CodigoUbicacion
+    +precioBase Dinero
+    +estado EstadoAsiento
+    +estaDisponible() boolean
+    +bloquear() void
+    +vender() void
+    +liberar() void
+  }
+  class Recinto {
+    +id string
+    +nombre string
+    +ciudad string
+    +aforo number
+  }
+  class Cliente {
+    +id string
+    +nombreCompleto string
+    +correo string
+    +telefonoMovil string
+    +nacionalidad string
+  }
+  class Orden {
+    +id string
+    +cliente Cliente
+    +eventoId string
+    +asientos ItemOrden[]
+    +liquidacion Liquidacion
+    +creadaEn Date
+    +expiraEn Date
+    +estado EstadoOrden
+    +pasarela? NombrePasarela
+    +referenciaPago? string
+    +crear(datos) Orden
+    +asignarPago(pasarela, ref) void
+    +aprobar() void
+    +rechazar() void
+    +expirar() void
+    +haExpirado(ahora) boolean
+    +datosInmutables(asientoId) string
+  }
+  class Boleto {
+    +id string
+    +ordenId string
+    +eventoId string
+    +asientoId string
+    +codigoUbicacion string
+    +codigoRedencion string
+    +firmaHash string
+    +fechaEmision Date
+    +representacionGrafica string
+  }
+  class ItemOrden {
+    <<value object>>
+    +asientoId string
+    +codigoUbicacion string
+    +precioBase Dinero
+  }
+  class Liquidacion {
+    <<value object>>
+    +valorBase Dinero
+    +tarifaServicio Dinero
+    +descuento Dinero
+    +montoTotal Dinero
+    +porcentajeTarifa number
+    +porcentajeDescuento number
+  }
+  class Dinero {
+    <<value object>>
+    +monto number
+    +cop(monto) Dinero
+    +sumar(otro) Dinero
+    +restar(otro) Dinero
+    +porcentaje(pct) Dinero
+    +igual(otro) boolean
+  }
+  class CodigoUbicacion {
+    <<value object>>
+    +valor string
+    +de(valor) CodigoUbicacion
+    zona string
+  }
+  class CalculadoraTarifas {
+    +calcular(valorBase, cantidad) Liquidacion
+  }
+  class PoliticaBloqueo {
+    +minutos number = 10
+    +calcularExpiracion(ahora) Date
+  }
+  class LimiteBoletasPorEvento {
+    +MAXIMO = 6
+    +verificar(acumuladas, nuevas) void
+  }
+  class ErrorNegocio {
+    +codigo string
+    Subclases DatosInvalidos,
+    EventoNoEncontrado, EventoNoDisponible,
+    AsientoNoDisponible, CantidadInvalida,
+    LimiteBoletasExcedido, TransicionInvalida,
+    OrdenNoEncontrada, PasarelaNoSoportada,
+    PagoNoVerificado
+  }
+  class Estados {
+    <<enumeration>>
+    +TipoEvento CONCIERTO / TEATRO / FESTIVAL
+    +EstadoEvento PROGRAMADO / AGOTADO / CANCELADO
+    +EstadoAsiento DISPONIBLE / BLOQUEADO / VENDIDO
+    +EstadoOrden PENDIENTE_PAGO / APROBADA /
+    +  RECHAZADA / EXPIRADA
+    +NombrePasarela paypal / wompi / pse
+    +ResultadoPago APROBADO / RECHAZADO / PENDIENTE
+  }
+  class NotificacionPago {
+    <<value object>>
+    +pasarela NombrePasarela
+    +referencia string
+    +resultado ResultadoPago
+    +montoPagado Dinero
+  }
+  class RegistroPago {
+    <<value object>>
+    +pasarela NombrePasarela
+    +referencia string
+    +urlPago string
+  }
+  class ComprobanteFiscal {
+    <<value object>>
+    +numero string
+    +cufe string
+    +emitidoEn Date
+  }
+  Orden *-- ItemOrden
+  Orden *-- Liquidacion
+  Orden --> Cliente
+  Asiento --> Dinero
+  Asiento --> CodigoUbicacion
+  Liquidacion --> Dinero
+  Evento --> Recinto : se realiza en
+  Boleto --> Orden : emitido por
+  CalculadoraTarifas ..> Liquidacion
+  Evento ..> Estados
+  Orden ..> Estados

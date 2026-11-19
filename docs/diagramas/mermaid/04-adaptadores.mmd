@@ -1,0 +1,180 @@
+---
+title: Adaptadores primarios y secundarios
+---
+classDiagram
+  direction TB
+  class ServidorWeb {
+    +app Express
+    +crearAppWeb(dependencias)
+    GET /api/eventos, /api/eventos/:id/asientos
+    POST /api/cotizaciones, /api/compras
+    POST /api/ordenes/:id/pago
+    GET /api/ordenes/:id, /api/boletos/:c/verificar
+  }
+  class WebhookPagos {
+    POST /webhooks/pagos/:pasarela
+    recibe notificaciones asíncronas
+  }
+  class SchedulerExpiracion {
+    +intervalo setInterval
+    ejecutar ExpirarReservas cada N s
+  }
+  class OrdenRepositoryMongo {
+    +col Collection~OrdenDoc~
+    implementa OrdenRepository
+    +aDoc() / aDominio()
+  }
+  class BoletoRepositoryMongo {
+    +col Collection~BoletoDoc~
+    implementa BoletoRepository
+    índice único codigoRedencion
+  }
+  class ClienteRepositoryMongo {
+    +col Collection~ClienteDoc~
+    implementa ClienteRepository
+  }
+  class RecintoRepositoryMysql {
+    +pool Pool (mysql2)
+    implementa RecintoRepository
+  }
+  class EventoRepositoryMysql {
+    +pool Pool (mysql2)
+    implementa EventoRepository
+  }
+  class AsientoRepositoryMysql {
+    +pool Pool (mysql2)
+    implementa AsientoRepository
+    UPDATE condicional transaccional
+  }
+  class ReposMemoria {
+    Recinto/Evento/AsientoRepositoryMemoria
+    Orden/Boleto/ClienteRepositoryMemoria
+    sustituto legacy y fakes de prueba
+  }
+  class GeneradorBoletoCriptografico {
+    +ALFABETO string
+    +generar(solicitud) MaterialBoleto
+    +verificarFirma(boleto, orden, evento)
+    -firmarclave, datos HMAC-SHA256
+    -nuevoCodigo string CSPRNG
+  }
+  class PasarelaMockBase {
+    +transacciones Map
+    +registrarPago(orden)
+    +interpretarNotificacion(cuerpo)
+    +verificarTransaccion(ref)
+    +simularNotificacion(ref, resultado)
+  }
+  class PasarelaPayPalMock {
+    +DTO PayPalWebhook
+    +traducirCuerpo(cuerpo)
+    +construirCuerpo(ref, monto, r)
+  }
+  class PasarelaWompiMock {
+    +DTO WompiWebhook
+    +traducirCuerpo(cuerpo)
+    +construirCuerpo(ref, monto, r)
+  }
+  class PasarelaPseMock {
+    +DTO PseWebhook
+    +traducirCuerpo(cuerpo)
+    +construirCuerpo(ref, monto, r)
+  }
+  class ResolutorPasarelasEnMapa {
+    +mapa Map
+    +obtener(nombre)
+    +disponibles()
+  }
+  class WhatsAppMock {
+    +enviados Mensaje[]
+    +enviar(mensaje)
+  }
+  class SendGridMock {
+    +enviados Mensaje[]
+    +enviar(mensaje)
+  }
+  class FacturacionDianMock {
+    +consecutivo number
+    +emitir(orden) ComprobanteFiscal
+  }
+  class RelojSistema {
+    +ahora() Date
+  }
+  class GeneradorIdsUuid {
+    +nuevo(prefijo) string
+  }
+  class LoggerConsola {
+    +info(mensaje)
+    +warn(mensaje)
+  }
+  ServidorWeb ..> ConsultarEventos
+  ServidorWeb ..> CotizarCompra
+  ServidorWeb ..> IniciarCompra
+  ServidorWeb ..> IniciarPago
+  ServidorWeb ..> ConsultarOrden
+  ServidorWeb ..> VerificarBoleto
+  WebhookPagos ..> ConfirmarPago
+  SchedulerExpiracion ..> ExpirarReservas
+  ServidorWeb *-- WebhookPagos
+  OrdenRepositoryMongo ..|> OrdenRepository
+  BoletoRepositoryMongo ..|> BoletoRepository
+  ClienteRepositoryMongo ..|> ClienteRepository
+  RecintoRepositoryMysql ..|> RecintoRepository
+  EventoRepositoryMysql ..|> EventoRepository
+  AsientoRepositoryMysql ..|> AsientoRepository
+  GeneradorBoletoCriptografico ..|> GeneradorBoletoPort
+  PasarelaMockBase ..|> PasarelaPagoPort
+  ResolutorPasarelasEnMapa ..|> ResolutorPasarelas
+  WhatsAppMock ..|> NotificacionPort
+  SendGridMock ..|> NotificacionPort
+  FacturacionDianMock ..|> FacturacionElectronicaPort
+  RelojSistema ..|> Clock
+  GeneradorIdsUuid ..|> GeneradorIds
+  LoggerConsola ..|> Logger
+  PasarelaPayPalMock ..|> PasarelaMockBase : extiende
+  PasarelaWompiMock ..|> PasarelaMockBase : extiende
+  PasarelaPseMock ..|> PasarelaMockBase : extiende
+  class ConsultarEventos
+  <<interface>> ConsultarEventos
+  class CotizarCompra
+  <<interface>> CotizarCompra
+  class IniciarCompra
+  <<interface>> IniciarCompra
+  class IniciarPago
+  <<interface>> IniciarPago
+  class ConsultarOrden
+  <<interface>> ConsultarOrden
+  class VerificarBoleto
+  <<interface>> VerificarBoleto
+  class ConfirmarPago
+  <<interface>> ConfirmarPago
+  class ExpirarReservas
+  <<interface>> ExpirarReservas
+  class OrdenRepository
+  <<interface>> OrdenRepository
+  class BoletoRepository
+  <<interface>> BoletoRepository
+  class ClienteRepository
+  <<interface>> ClienteRepository
+  class RecintoRepository
+  <<interface>> RecintoRepository
+  class EventoRepository
+  <<interface>> EventoRepository
+  class AsientoRepository
+  <<interface>> AsientoRepository
+  class GeneradorBoletoPort
+  <<interface>> GeneradorBoletoPort
+  class PasarelaPagoPort
+  <<interface>> PasarelaPagoPort
+  class ResolutorPasarelas
+  <<interface>> ResolutorPasarelas
+  class NotificacionPort
+  <<interface>> NotificacionPort
+  class FacturacionElectronicaPort
+  <<interface>> FacturacionElectronicaPort
+  class Clock
+  <<interface>> Clock
+  class GeneradorIds
+  <<interface>> GeneradorIds
+  class Logger
+  <<interface>> Logger

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="800" viewBox="0 0 1480 800" font-family="Segoe UI, Arial, sans-serif">
+<defs><marker id="tri" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L13,6 L1,11 z" fill="#fff" stroke="#333"/></marker><marker id="abi" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L11,6 L1,11" fill="none" stroke="#444" stroke-width="1.5"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="740" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#222">StagePass Live · Vista hexagonal (puertos y adaptadores)</text>
+<polygon points="370,50 1070,50 1140,370 1070,690 370,690 300,370" fill="#f3efff" stroke="#6b4fbb" stroke-width="3"/>
+<text x="720" y="84" text-anchor="middle" font-size="17" font-weight="700" fill="#6b4fbb">NÚCLEO HEXAGONAL</text>
+<line x1="140" y1="120" x2="140" y2="160" stroke-width="1.6" stroke="#444" marker-end="url(#abi)"/>
+<text x="140" y="135" text-anchor="middle" font-size="11" fill="#333" paint-order="stroke" stroke="#fff" stroke-width="4">HTTP</text>
+<line x1="140" y1="440" x2="140" y2="390" stroke-width="1.6" stroke="#444" marker-end="url(#abi)"/>
+<text x="140" y="410" text-anchor="middle" font-size="11" fill="#333" paint-order="stroke" stroke="#fff" stroke-width="4">webhook</text>
+<line x1="211.75675675675677" y1="250" x2="350" y2="336.6949152542373" stroke-width="1.6" stroke="#444" marker-end="url(#abi)"/>
+<text x="280.8783783783784" y="288.3474576271186" text-anchor="middle" font-size="11" fill="#333" paint-order="stroke" stroke="#fff" stroke-width="4">invoca</text>
+<line x1="260" y1="363.3050847457627" x2="350" y2="377.03389830508473" stroke-width="1.6" stroke="#444" marker-end="url(#abi)"/>
+<text x="305" y="365.1694915254237" text-anchor="middle" font-size="11" fill="#333" paint-order="stroke" stroke="#fff" stroke-width="4">invoca</text>
+<line x1="199" y1="550" x2="350" y2="447.6271186440678" stroke-width="1.6" stroke="#444" marker-end="url(#abi)"/>
+<text x="274.5" y="493.81355932203394" text-anchor="middle" font-size="11" fill="#333" paint-order="stroke" stroke="#fff" stroke-width="4">invoca</text>
+<line x1="563.7096774193549" y1="320" x2="520" y2="343.7719298245614" stroke-width="1.6" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<text x="541.8548387096774" y="326.8859649122807" text-anchor="middle" font-size="11" fill="#333" paint-order="stroke" stroke="#fff" stroke-width="4">realiza</text>
+<line x1="720" y1="320" x2="720" y2="380" stroke-width="1.6" stroke="#444" marker-end="url(#abi)"/>
+<text x="720" y="345" text-anchor="middle" font-size="11" fill="#333" paint-order="stroke" stroke="#fff" stroke-width="4">usa</text>
+<line x1="876.2903225806451" y1="320" x2="920" y2="343.7719298245614" stroke-width="1.6" stroke="#444" marker-end="url(#abi)"/>
+<text x="898.1451612903226" y="326.8859649122807" text-anchor="middle" font-size="11" fill="#333" paint-order="stroke" stroke="#fff" stroke-width="4">usa (DIP)</text>
+<line x1="1271.949152542373" y1="140" x2="1090" y2="310.3968253968254" stroke-width="1.6" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<text x="1180.9745762711864" y="220.1984126984127" text-anchor="middle" font-size="11" fill="#333" paint-order="stroke" stroke="#fff" stroke-width="4">implementa</text>
+<line x1="1243.3783783783783" y1="250" x2="1090" y2="340.07936507936506" stroke-width="1.6" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<line x1="1180" y1="348.3333333333333" x2="1090" y2="369.76190476190476" stroke-width="1.6" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<line x1="1180" y1="409.44444444444446" x2="1090" y2="399.44444444444446" stroke-width="1.6" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<line x1="1230" y1="490" x2="1090" y2="427.77777777777777" stroke-width="1.6" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<line x1="1273.0851063829787" y1="590" x2="1090" y2="453.41269841269843" stroke-width="1.6" stroke="#333" stroke-dasharray="7 4" marker-end="url(#tri)"/>
+<rect x="350" y="170" width="170" height="440" rx="10" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+<text x="435" y="196" text-anchor="middle" font-size="13" font-weight="700" fill="#222">PUERTOS DE ENTRADA</text>
+<text x="435" y="213" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">(interfaces de casos de uso)</text>
+<text x="435" y="230" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222"></text>
+<text x="435" y="247" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">ConsultarEventos</text>
+<text x="435" y="264" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">CotizarCompra</text>
+<text x="435" y="281" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">IniciarCompra</text>
+<text x="435" y="298" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">IniciarPago</text>
+<text x="435" y="315" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">ConfirmarPago</text>
+<text x="435" y="332" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">ExpirarReservas</text>
+<text x="435" y="349" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">ConsultarOrden</text>
+<text x="435" y="366" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">VerificarBoleto</text>
+<rect x="560" y="150" width="320" height="170" rx="10" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+<text x="720" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#222">CASOS DE USO</text>
+<text x="720" y="209" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">(application/usecases)</text>
+<text x="720" y="226" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222"></text>
+<text x="720" y="243" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">IniciarCompraService · ConfirmarPagoService</text>
+<text x="720" y="260" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">ExpirarReservasService · CotizarCompraService</text>
+<text x="720" y="277" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">IniciarPagoService · ConsultarOrdenService</text>
+<text x="720" y="294" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">ConsultarEventosService · VerificarBoletoService</text>
+<rect x="560" y="380" width="320" height="230" rx="10" fill="#fff2cc" stroke="#d6b656" stroke-width="2"/>
+<text x="720" y="406" text-anchor="middle" font-size="13" font-weight="700" fill="#222">DOMINIO</text>
+<text x="720" y="423" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">(entidades y reglas puras)</text>
+<text x="720" y="440" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222"></text>
+<text x="720" y="457" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">Evento · Asiento · Cliente · Orden · Boleto</text>
+<text x="720" y="474" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">Dinero · CodigoUbicacion · Liquidacion</text>
+<text x="720" y="491" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">CalculadoraTarifas · PoliticaBloqueo</text>
+<text x="720" y="508" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">LimiteBoletasPorEvento · ErrorNegocio</text>
+<rect x="920" y="170" width="170" height="440" rx="10" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+<text x="1005" y="196" text-anchor="middle" font-size="13" font-weight="700" fill="#222">PUERTOS DE SALIDA</text>
+<text x="1005" y="213" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">(interfaces)</text>
+<text x="1005" y="230" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222"></text>
+<text x="1005" y="247" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">Recinto/Evento/AsientoRepository</text>
+<text x="1005" y="264" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">OrdenRepository</text>
+<text x="1005" y="281" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">BoletoRepository</text>
+<text x="1005" y="298" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">ClienteRepository</text>
+<text x="1005" y="315" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">PasarelaPagoPort</text>
+<text x="1005" y="332" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">GeneradorBoletoPort</text>
+<text x="1005" y="349" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">NotificacionPort</text>
+<text x="1005" y="366" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">FacturacionElectronicaPort</text>
+<text x="1005" y="383" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">Clock · GeneradorIds</text>
+<rect x="20" y="60" width="240" height="60" rx="10" fill="#ffffff" stroke="#666666" stroke-width="2"/>
+<text x="140" y="87" text-anchor="middle" font-size="13" font-weight="700" fill="#222">Navegador / app móvil</text>
+<text x="140" y="104" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">(cliente)</text>
+<rect x="20" y="160" width="240" height="90" rx="10" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+<text x="140" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#222">ADAPTADOR WEB REST</text>
+<text x="140" y="211" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">Express · selección de asientos,</text>
+<text x="140" y="228" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">inicio de compra, pago, consultas</text>
+<rect x="20" y="300" width="240" height="90" rx="10" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+<text x="140" y="334" text-anchor="middle" font-size="13" font-weight="700" fill="#222">ADAPTADOR WEBHOOK</text>
+<text x="140" y="351" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">POST /webhooks/pagos/:pasarela</text>
+<text x="140" y="368" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">(notificaciones asíncronas)</text>
+<rect x="20" y="440" width="240" height="60" rx="10" fill="#ffffff" stroke="#666666" stroke-width="2"/>
+<text x="140" y="467" text-anchor="middle" font-size="13" font-weight="700" fill="#222">PayPal · Wompi · PSE</text>
+<text x="140" y="484" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">(servicios externos)</text>
+<rect x="20" y="550" width="240" height="80" rx="10" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+<text x="140" y="579" text-anchor="middle" font-size="13" font-weight="700" fill="#222">ADAPTADOR PROGRAMADO</text>
+<text x="140" y="596" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">Scheduler (setInterval)</text>
+<text x="140" y="613" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">expira reservas vencidas</text>
+<rect x="1180" y="50" width="280" height="90" rx="10" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/>
+<text x="1320" y="84" text-anchor="middle" font-size="13" font-weight="700" fill="#222">MongoDB (REAL)</text>
+<text x="1320" y="101" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">OrdenRepositoryMongo · BoletoRepositoryMongo</text>
+<text x="1320" y="118" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">ClienteRepositoryMongo</text>
+<rect x="1180" y="160" width="280" height="90" rx="10" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/>
+<text x="1320" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#222">MySQL legacy</text>
+<text x="1320" y="211" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">Recinto/Evento/AsientoRepositoryMysql</text>
+<text x="1320" y="228" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">(o sustituto en memoria)</text>
+<rect x="1180" y="270" width="280" height="90" rx="10" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/>
+<text x="1320" y="304" text-anchor="middle" font-size="13" font-weight="700" fill="#222">GENERADOR DE BOLETOS (REAL)</text>
+<text x="1320" y="321" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">HMAC-SHA256 + código + QR</text>
+<text x="1320" y="338" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">GeneradorBoletoCriptografico</text>
+<rect x="1180" y="380" width="280" height="90" rx="10" fill="#fff7e6" stroke="#d79b00" stroke-width="2"/>
+<text x="1320" y="414" text-anchor="middle" font-size="13" font-weight="700" fill="#222">Pasarelas de pago (MOCK)</text>
+<text x="1320" y="431" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">PasarelaPayPalMock · PasarelaWompiMock</text>
+<text x="1320" y="448" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">PasarelaPseMock</text>
+<rect x="1180" y="490" width="280" height="80" rx="10" fill="#fff7e6" stroke="#d79b00" stroke-width="2"/>
+<text x="1320" y="527" text-anchor="middle" font-size="13" font-weight="700" fill="#222">Notificaciones (MOCK)</text>
+<text x="1320" y="544" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">WhatsAppMock · SendGridMock</text>
+<rect x="1180" y="590" width="280" height="70" rx="10" fill="#fff7e6" stroke="#d79b00" stroke-width="2"/>
+<text x="1320" y="622" text-anchor="middle" font-size="13" font-weight="700" fill="#222">Facturación electrónica (MOCK)</text>
+<text x="1320" y="639" text-anchor="middle" font-size="11.5" font-weight="400" fill="#222">FacturacionDianMock</text>
+<text x="740" y="760" text-anchor="middle" font-size="13" fill="#444">Regla de dependencia: todas las flechas apuntan hacia el núcleo. El núcleo solo conoce interfaces (puertos); los adaptadores conocen las tecnologías.</text>
+<text x="740" y="780" text-anchor="middle" font-size="12" fill="#444">Línea discontinua con triángulo = realiza/implementa · flecha abierta = invoca/depende · (REAL) = implementación completa · (MOCK) = simulado</text>
+</svg>
